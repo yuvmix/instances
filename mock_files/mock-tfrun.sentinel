@@ -1,0 +1,47 @@
+id = "run-FYhKCs62DKDzxj2o"
+created_at = "2022-12-14T09:20:52.480Z"
+message = "mock files"
+commit_sha = "56ba6673d1cc840cb9307450c97a8d7e58925139"
+speculative = true
+is_destroy = false
+refresh = true
+refresh_only = false
+replace_addrs = null
+target_addrs = null
+
+variables = {
+	"AWS_ACCESS_KEY_ID": {
+		"category":  "terraform",
+		"sensitive": true,
+	},
+	"AWS_SECRET_ACCESS_KEY": {
+		"category":  "terraform",
+		"sensitive": true,
+	},
+}
+
+organization = {
+	"name": "example-org-886ff3",
+}
+
+workspace = {
+	"auto_apply":  true,
+	"created_at":  "2022-12-14T09:06:01.326Z",
+	"description": null,
+	"id":          "ws-WG8FtHD8f8q6JBDi",
+	"name":        "instances",
+	"tags":        [],
+	"vcs_repo": {
+		"branch":             "",
+		"display_identifier": "yuvmix/instances",
+		"identifier":         "yuvmix/instances",
+		"ingress_submodules": false,
+	},
+	"working_directory": null,
+}
+
+cost_estimate = {
+	"delta_monthly_cost":    "69.0432",
+	"prior_monthly_cost":    "0.0",
+	"proposed_monthly_cost": "69.0432",
+}
