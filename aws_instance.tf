@@ -9,6 +9,6 @@ resource "aws_instance" "ec2" {
   security_group= ["ssh_security_group"]
   
   tags = {
-    Name = "visualscrapy"
+    Name = "web_application"
   }
 }
