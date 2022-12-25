@@ -1,11 +1,12 @@
-data "aws_key_pair" "instance" {
-  key_name = "instance"
+resource "aws_key_pair" "instance" {
+  key_name = "instances"
+  public_key = file(var.key_place)
 }
 
 resource "aws_instance" "ec2" {
   ami             = var.ubuntu_image 
   instance_type   = var.instance_type
-  key_name        = var.key_name
+  key_name        = "instances" # var.key_name
   security_groups = var.security_group
   
   tags = {
@@ -16,7 +17,7 @@ resource "aws_instance" "ec2" {
       type        = "ssh"
       user        = var.instance_user
       host        = self.public_ip
-      private_key = data.aws_key_pair.instance.public_key #file(var.key_place)
+      private_key = aws_key_pair.instance.public_key #file(var.key_place)
     }
     
   
