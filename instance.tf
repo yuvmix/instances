@@ -1,8 +1,3 @@
-resource "tfe_ssh_key" "instance" {
-  name = "instance"
-  organization = "example-org-886ff3"
-}
-
 resource "aws_instance" "ec2" {
   ami             = var.ubuntu_image 
   instance_type   = var.instance_type
@@ -17,7 +12,7 @@ resource "aws_instance" "ec2" {
       type        = "ssh"
       user        = var.instance_user
       host        = self.public_ip
-      private_key = tfe_ssh_key.instance #file(var.key_place)
+      private_key = file(var.key_place)
     }
     
   
