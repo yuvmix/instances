@@ -7,19 +7,11 @@ variable "aws_region" {
 }
 
 variable "ubuntu_image" {
-  default = "ami-057fb6ca30447d5c7"
+  default = "ami-0574da719dca65348"
 }
 
 variable "instance_type" {
   default = "t2.micro"
-}
-
-variable "key_name" {
-  default = "docker-machines"
-}
-
-variable "private_key" {
-  default = "./docker-machines.pem"
 }
 
 variable "security_group" {
