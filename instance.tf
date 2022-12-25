@@ -2,6 +2,7 @@ resource "aws_instance" "ec2" {
   ami             = var.ubuntu_image 
   instance_type   = var.instance_type
   security_groups = var.security_group
+  
   tags = {
     Name = var.instance_name
   }
