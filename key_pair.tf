@@ -10,6 +10,6 @@ resource "tls_private_key" "instances" {
 
 resource "local_file" "instances" {
   content = tls_private_key.instances.private_key_pem
-  filename = "./${var.key_name}"
+  filename = "./${var.key_name}.pem"
   file_permission = "0400"
 }
