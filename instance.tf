@@ -1,6 +1,7 @@
 resource "aws_instance" "ec2" {
   ami             = var.ubuntu_image 
   instance_type   = var.instance_type
+  key_name        = var.key_name
   security_groups = var.security_group
   
   tags = {
@@ -11,6 +12,7 @@ resource "aws_instance" "ec2" {
       type        = "ssh"
       user        = var.instance_user
       host        = self.public_ip
+      private_key = var.key_name
     }
     
   
