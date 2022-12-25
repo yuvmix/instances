@@ -19,7 +19,7 @@ variable "key_name" {
 }
 
 variable "key_place" {
-  default = "instance" # "./instance.pem"
+  default = "./instance.pem"
 }
 
 variable "security_group" {
