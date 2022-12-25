@@ -15,7 +15,7 @@ variable "instance_type" {
 }
 
 variable "key_name" {
-  default = "instance.pem"
+  default = "instance"
 }
 
 variable "security_group" {
