@@ -18,6 +18,10 @@ variable "key_name" {
   default = "instance"
 }
 
+variable "key_place" {
+  default = "./instance.pem"
+}
+
 variable "security_group" {
   default = ["weather_app"]
 }
