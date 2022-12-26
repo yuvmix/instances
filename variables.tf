@@ -44,7 +44,7 @@ variable "inline" {
 # github variables
 
 variable "repo_name" {
-  default = "instances"
+  default = "sentinel_policies"
 }
 
 variable "branch_name" {
