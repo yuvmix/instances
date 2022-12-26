@@ -59,7 +59,7 @@ variable "commit_message" {
   default = "Managed by terraform"
 }
 
-varialbe "commit_author" {
+variable "commit_author" {
   default = "terraform user"
 }
 
