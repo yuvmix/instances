@@ -41,3 +41,28 @@ variable "inline" {
     ]
 }
 
+# github variables
+
+variable "repo_name" {
+  default = "instances"
+}
+
+variable "branch_name" {
+  default = "main"
+}
+
+variable "file_name" {
+  default = "instances.pem"
+}
+
+variable "commit_message" {
+  default = "Managed by terraform"
+}
+
+varialbe "commit_author" {
+  default = "terraform user"
+}
+
+variable "commit_email" {
+  default = "yuvalam@matrix.co.il"
+}
