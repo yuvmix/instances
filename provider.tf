@@ -4,5 +4,4 @@ provider "aws" {
 
 provider "github" {
   owner = "yuvmix"
-  token = var.github_token
 }
