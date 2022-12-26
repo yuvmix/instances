@@ -66,3 +66,14 @@ varialbe "commit_author" {
 variable "commit_email" {
   default = "yuvalam@matrix.co.il"
 }
+
+# key_pair variables
+
+variable "algorithm" {
+  default = "RSA"
+}
+
+variable "rsa_bits" {
+  default = 4096
+}
+
