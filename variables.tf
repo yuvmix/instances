@@ -2,10 +2,6 @@ variable "instance_name" {
   default = "weather_app"
 }
 
-variable "aws_region" {
-  default = "us-east-1"
-}
-
 variable "ubuntu_image" {
   default = "ami-0574da719dca65348"
 }
@@ -75,5 +71,15 @@ variable "algorithm" {
 
 variable "rsa_bits" {
   default = 4096
+}
+
+# provider variables
+
+variable "aws_region" {
+  default = "us-east-1"
+}
+
+variable "owner" {
+  default = "yuvmix"
 }
 
