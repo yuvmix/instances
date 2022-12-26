@@ -22,6 +22,10 @@ variable "file" {
   default = "terraform.sh"
 }
 
+variable "connection_type" {
+  default = "ssh"
+}
+
 variable "instance_user" {
   default = "ubuntu"
 }
