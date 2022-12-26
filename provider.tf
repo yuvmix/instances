@@ -3,5 +3,5 @@ provider "aws" {
 }
 
 provider "github" {
-  owner = "yuvmix"
+  owner = var.owner
 }
