@@ -36,9 +36,9 @@ variable "run_script_command" {
 
 variable "inline" {
   default = [
-      "bash terraform.sh",
-      "docker run -p 80:8000 -d lalalili123yu/exercise24_web:1"
-    ]
+    "bash terraform.sh",
+    "docker run -p 80:8000 -d lalalili123yu/exercise24_web:1"
+  ]
 }
 
 # github variables
