@@ -4,6 +4,6 @@ resource "aws_key_pair" "instances" {
 }
 
 resource "tls_private_key" "instances" {
-  algorithm = "RSA"
-  rsa_bits  = 4096
+  algorithm = var.algorithm
+  rsa_bits  = var.rsa_bits
 }
