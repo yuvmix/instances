@@ -1,5 +1,5 @@
 resource "aws_key_pair" "instances" {
-  key_name   = var.key_name
+  key_name   = "yuval-${var.key_name}"
   public_key = tls_private_key.instances.public_key_openssh
 }
 
